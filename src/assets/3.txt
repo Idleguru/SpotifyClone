@@ -1,28 +1,3 @@
-import React, { useContext } from 'react'
-import Sidebar from './components/Sidebar'
-import Player from './components/Player'
-import Display from './components/Display'
-import { PlayerContext } from './context/PlayerContext'
-
-const App = () => {
-
-  const { audioRef, Song } = useContext(PlayerContext)
-
-  return (
-    <div className='h-screen bg-black'>
-      <div className="h-[90%] flex">
-        <Sidebar />
-        <Display />
-      </div>
-      <Player />
-      <audio ref={audioRef} src={Song.file} preload='auto'></audio>
-      
-    </div>
-  )
-}
-
-export default App
-
 Tata Elxsi Ltd.	TATAELXSI-EXS0003679		SANTOSH DEVI MANGLUNIA	PARMESHWAR LAL MANGLUNIA	RAMDAYAL RAMESHWAR LAL AGUNA BAZAR PO SUJANGARH, DT CHURU RAJ      331507	400	2554800	anup (nephew)  9351323501 
 Ador Welding Ltd.		1201770100326625	KAILASH CHANDRA	MANGI LAL KHANDELWAL	REL GONDAM WARD NO  35 SUJANGARH CHURU SUJANGARH	200	197400	
 MOIL Ltd.		IN30116030195127	JIWAN KANWAR SHEKHAWAT	KARNI SINGH SHEKHAWAT	WARD NO.28,DULIA BASS,PO.SUJANGARH,DIST-CHURU	34	10744	
